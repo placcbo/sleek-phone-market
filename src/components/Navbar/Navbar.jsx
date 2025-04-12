@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { ShoppingCart, Search, Menu, X } from 'lucide-react';
 import './Navbar.scss';
 
@@ -24,15 +25,15 @@ const Navbar = ({ cartItems }) => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
         <div className="navbar-logo">
-          <a href="/">SleekPhone</a>
+          <Link to="/">SleekPhone</Link>
         </div>
         
         <div className={`navbar-links ${isMobileMenuOpen ? 'active' : ''}`}>
-          <a href="/" className="navbar-link">Home</a>
-          <a href="/samsung" className="navbar-link">Samsung</a>
-          <a href="/iphone" className="navbar-link">iPhone</a>
-          <a href="/about" className="navbar-link">About</a>
-          <a href="/contact" className="navbar-link">Contact</a>
+          <Link to="/" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+          <Link to="/samsung" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>Samsung</Link>
+          <Link to="/iphone" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>iPhone</Link>
+          <Link to="/about" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
+          <Link to="/contact" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
         </div>
         
         <div className="navbar-actions">

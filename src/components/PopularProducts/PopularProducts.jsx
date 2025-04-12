@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ProductCard from '../ProductCard/ProductCard';
 import './PopularProducts.scss';
 
@@ -47,9 +48,9 @@ const PopularProducts = ({ products, addToCart }) => {
         </div>
         
         <div className="view-all-container">
-          <a href="/products" className="view-all-btn">
-            View All Products
-          </a>
+          <Link to={activeTab === 'all' ? '/products' : `/${activeTab}`} className="view-all-btn">
+            View All {activeTab === 'all' ? 'Products' : `${activeTab.charAt(0).toUpperCase()}${activeTab.slice(1)} Phones`}
+          </Link>
         </div>
       </div>
     </section>

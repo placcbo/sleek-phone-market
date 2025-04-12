@@ -114,7 +114,7 @@ const Index = () => {
       
       <section className="product-section section">
         <div className="container">
-          <div className="product-filter-layout">
+          <div className="product-layout">
             <aside className="filter-sidebar">
               <ProductFilter onFilterChange={handleFilterChange} />
             </aside>
