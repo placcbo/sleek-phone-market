@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Range } from 'react-range';
-import { Filter } from 'lucide-react';
+import { Filter, SlidersHorizontal } from 'lucide-react';
 import './ProductFilter.scss';
 
 const ProductFilter = ({ onFilterChange }) => {
@@ -37,12 +37,12 @@ const ProductFilter = ({ onFilterChange }) => {
   return (
     <>
       <div className="filter-title">
-        <Filter size={18} />
-        <span>Filters:</span>
+        <SlidersHorizontal size={18} />
+        <span>Quick Filters</span>
       </div>
       
       <div className="filter-group">
-        <span className="filter-label">Price:</span>
+        <span className="filter-label">Price Range:</span>
         <div className="price-slider">
           <Range
             step={10}
