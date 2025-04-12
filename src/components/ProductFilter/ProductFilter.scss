@@ -1,84 +1,82 @@
 
-.product-filter {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 24px;
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right: 20px;
   
-  .filter-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
+  .filter-label {
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--dark-gray);
+    white-space: nowrap;
+  }
+  
+  .price-slider {
+    width: 200px;
+    padding: 0;
     
-    h3 {
-      font-size: 18px;
-      font-weight: 600;
+    .slider-track {
+      height: 4px;
+      width: 100%;
+      background-color: #e0e0e0;
+      border-radius: 2px;
+      position: relative;
+    }
+    
+    .slider-thumb {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: var(--primary-blue);
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .price-range-values {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+      
+      span {
+        font-size: 13px;
+        color: var(--medium-gray);
+      }
     }
   }
   
-  .filter-section {
-    margin-bottom: 24px;
+  .brand-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     
-    h4 {
-      font-size: 16px;
-      font-weight: 500;
-      margin-bottom: 16px;
-    }
-    
-    .price-slider {
-      padding: 10px 0;
+    .brand-option {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
       
-      .slider-track {
-        height: 4px;
-        width: 100%;
-        background-color: #e0e0e0;
-        border-radius: 2px;
-        position: relative;
-      }
-      
-      .slider-thumb {
+      input {
         width: 16px;
         height: 16px;
-        border-radius: 50%;
-        background-color: var(--primary-blue);
         cursor: pointer;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       }
       
-      .price-range-values {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 12px;
-        
-        span {
-          font-size: 14px;
-          color: #666;
-        }
+      span {
+        font-size: 14px;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-group {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
     
-    .brand-options {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      
-      .brand-option {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        cursor: pointer;
-        
-        input {
-          width: 18px;
-          height: 18px;
-          cursor: pointer;
-        }
-        
-        span {
-          font-size: 16px;
-        }
-      }
+    .price-slider {
+      width: 100%;
     }
   }
 }
