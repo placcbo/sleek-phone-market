@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Slider } from 'react-range';
+import { Range } from 'react-range'; // Changed from Slider to Range which is the correct export
 import { Filter } from 'lucide-react';
 import './ProductFilter.scss';
 
@@ -44,7 +44,7 @@ const ProductFilter = ({ onFilterChange }) => {
       <div className="filter-section">
         <h4>Price Range</h4>
         <div className="price-slider">
-          <Slider
+          <Range
             step={10}
             min={100}
             max={1500}
