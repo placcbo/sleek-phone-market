@@ -2,6 +2,7 @@
 import React from 'react';
 import { ShoppingCart, Heart } from 'lucide-react';
 import './ProductCard.scss';
+import { Button } from '../ui/button';
 
 const ProductCard = ({ product, addToCart }) => {
   const { id, name, image, price, originalPrice, brand, memory } = product;
@@ -26,10 +27,14 @@ const ProductCard = ({ product, addToCart }) => {
           <div className="product-original-price">${originalPrice}</div>
         </div>
       </div>
-      <button className="add-to-cart-btn" onClick={() => addToCart(id)}>
+      <Button 
+        className="add-to-cart-btn"
+        onClick={() => addToCart(id)}
+        variant="default"
+      >
         <ShoppingCart size={18} />
         <span>Add to Cart</span>
-      </button>
+      </Button>
     </div>
   );
 };

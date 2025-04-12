@@ -7,6 +7,7 @@ import './Navbar.scss';
 const Navbar = ({ cartItems }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [showCart, setShowCart] = useState(false);
   
   useEffect(() => {
     const handleScroll = () => {
@@ -41,7 +42,7 @@ const Navbar = ({ cartItems }) => {
             <Search size={20} />
           </button>
           
-          <button className="navbar-action-btn cart-btn">
+          <button className="navbar-action-btn cart-btn" onClick={() => setShowCart(!showCart)}>
             <ShoppingCart size={20} />
             {cartItems > 0 && <span className="cart-count">{cartItems}</span>}
           </button>
@@ -54,6 +55,23 @@ const Navbar = ({ cartItems }) => {
           </button>
         </div>
       </div>
+      
+      {showCart && cartItems > 0 && (
+        <div className="cart-dropdown">
+          <div className="cart-header">
+            <h3>Your Cart ({cartItems})</h3>
+            <button onClick={() => setShowCart(false)}><X size={18} /></button>
+          </div>
+          <div className="cart-items">
+            <p>Your items will appear here</p>
+          </div>
+          <div className="cart-footer">
+            <Link to="/checkout" className="checkout-btn" onClick={() => setShowCart(false)}>
+              Checkout
+            </Link>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

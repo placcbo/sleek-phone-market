@@ -24,6 +24,18 @@ const HeroSlider = () => {
       title: "iPhone. Renewed.",
       subtitle: "Get premium features without the premium price.",
       cta: "Discover iPhone"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1611791484670-ce19b801d192?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80",
+      title: "Latest Technology",
+      subtitle: "Refurbished devices with cutting-edge features.",
+      cta: "View Collection"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1546054454-aa26e2b734c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80",
+      title: "Spring Sale",
+      subtitle: "Limited time offers on selected models.",
+      cta: "Shop Deals"
     }
   ];
   
