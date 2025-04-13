@@ -57,11 +57,11 @@ const Footer = () => {
             <div className="contact-info">
               <div className="contact-item">
                 <MapPin size={18} />
-                <span>123 Tech Street, San Francisco, CA 94105</span>
+                <span>PopeManHouse, Nairobi CBD, 94105</span>
               </div>
               <div className="contact-item">
                 <Phone size={18} />
-                <span>+1 (555) 123-4567</span>
+                <span>+254 720 009 566</span>
               </div>
               <div className="contact-item">
                 <Mail size={18} />

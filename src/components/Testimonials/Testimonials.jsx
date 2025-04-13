@@ -11,7 +11,7 @@ const Testimonials = () => {
     {
       id: 1,
       name: "Sarah Johnson",
-      location: "New York",
+      location: "Nairobi",
       rating: 5,
       text: "Bought a refurbished iPhone 13 Pro and couldn't be happier. It looks brand new and works perfectly. The battery life is excellent and the camera quality is outstanding.",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&h=100&q=80"
@@ -19,7 +19,7 @@ const Testimonials = () => {
     {
       id: 2,
       name: "Michael Brown",
-      location: "Los Angeles",
+      location: "Thika",
       rating: 5,
       text: "Great experience buying a refurbished Samsung Galaxy. The phone arrived in pristine condition and the shipping was incredibly fast. Will definitely buy from here again!",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&h=100&q=80"
@@ -27,7 +27,7 @@ const Testimonials = () => {
     {
       id: 3,
       name: "Emily Wilson",
-      location: "Chicago",
+      location: "Nairobi",
       rating: 4,
       text: "I was skeptical about buying refurbished, but SleekPhone changed my mind. My iPhone X looks and works like new. The only reason for 4 stars is that it took a bit longer to arrive than expected.",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&h=100&q=80"
@@ -35,7 +35,7 @@ const Testimonials = () => {
     {
       id: 4,
       name: "David Kim",
-      location: "San Francisco",
+      location: "Nairobi",
       rating: 5,
       text: "The Samsung Galaxy S22 I purchased exceeded my expectations. Customer service was amazing when I had questions about my order. Highly recommend!",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&h=100&q=80"
